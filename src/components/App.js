@@ -29,6 +29,7 @@ const App = () => {
             <Link to="/Pizza">Pizza</Link>
           </div>
         </nav>
+
         <Switch>
           <Route path="/Pizza">
             <Pizza />
@@ -54,6 +55,12 @@ const StyledApp = styled.div`
 
 nav{
   background-color: #ffd88c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 32px;
 }
 
 h1{
@@ -65,25 +72,19 @@ h1{
   justify-content: space-between;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  border-bottom: 1px solid #efefef;
-  margin-bottom: 32px;
-}
 
 .nav-links a {
+  text-align: center;
+  width: 75px; 
+  height: 19px;
   text-decoration: none;
   color: #CC5B3B;
   font-weight: bold;
   margin-right: 8px;
+  border: 3px solid #C32B0E;
+  border-radius: 5px;
+  /* box-sizing: 5%border-box; */
 }
 
-.nav-links a:last-of-type {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
 
 `
