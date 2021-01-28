@@ -20,6 +20,7 @@ export default function Pizza(props) {
         <StyledForm>
 
             <form className="form container" onSubmit={onSubmit}>
+
                 <div className="container pizza-making-title">
                     <h3>Build your own pizza</h3>
                 </div>
@@ -32,7 +33,8 @@ export default function Pizza(props) {
                     <div className="size">
                         <label>
                             Size
-                        <select onChange={onChange} name="size">
+                        {/* <select onChange={onChange} name="size"> */}
+                            <select name="size">
                                 <option value="">- Select an option -</option>
                                 <option value="small">Small</option>
                                 <option value="medium">Medium</option>
